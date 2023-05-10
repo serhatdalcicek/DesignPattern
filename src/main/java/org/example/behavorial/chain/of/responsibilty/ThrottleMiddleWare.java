@@ -23,7 +23,7 @@ public class ThrottleMiddleWare extends MiddleWare{
         if(request > requestPerMinute){
             System.out.println("Request sayısı aşıldı");
             Thread.currentThread().stop();
-            //return false;dsaads
+            //return false;
         }
         return checkNext(email,password);
     }
